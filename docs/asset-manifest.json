@@ -1,0 +1,95 @@
+{
+  "sourceCommit": "6dbbbdc9e0cb987f9d53e1e2f471f0068d7703d1",
+  "assets": [
+    {
+      "file": "media/01-road.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019786638547.jpg",
+      "bytes": 655457,
+      "sha256": "bc7ce28e8cdc76c62036cfd662d652eda0bfe9ddbda64d647b944c7e5df65174"
+    },
+    {
+      "file": "media/proof-ali-vehicle.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019779516471.jpg",
+      "bytes": 254460,
+      "sha256": "6698f316c3437c9bf66b082d73f36a3be53945e4dfa31f74c68c028a072579fb"
+    },
+    {
+      "file": "media/proof-kora-seven-day.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019858900147.jpg",
+      "bytes": 409656,
+      "sha256": "1a65abb13aed3ae937f13e5365b3716dcd7383f2c96bda420aa1fc1ab81d1c3c"
+    },
+    {
+      "file": "media/region-ali-terrain.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019778565172.jpg",
+      "bytes": 484750,
+      "sha256": "92a45208afcd4064c5406dfc91ecd01ce40bde02c0db4e49aefe000362bef434"
+    },
+    {
+      "file": "media/region-everest-panorama.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019778564148.jpg",
+      "bytes": 548220,
+      "sha256": "ce600ef182111b1c17fac97ac5913bc95cc2a799322ebe25076953accd6db5e7"
+    },
+    {
+      "file": "media/region-everest-reflection.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019778566148.jpg",
+      "bytes": 322502,
+      "sha256": "33ca64f014824f772c1bd74c1d409da037d49fb1315b6e61eef3f3ce39c92d9d"
+    },
+    {
+      "file": "media/region-kora-journey.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019863052404.jpg",
+      "bytes": 590301,
+      "sha256": "4300f42e211756d0229608e2afe93686698edfb4bc5c9f1a00b08f3bc574dee6"
+    },
+    {
+      "file": "media/region-kora-kailash.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019786639363.jpg",
+      "bytes": 552596,
+      "sha256": "42f643fcecd2a14b844c9f6df773f76b8a4f036056d74dcaed1d06a1fae7a183"
+    },
+    {
+      "file": "media/region-kulagangri-golden.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019796643863.jpg",
+      "bytes": 356728,
+      "sha256": "66db6fd355fb062dd6987ba5be4c585acb5925deec14d8501e9b8848c2fe374f"
+    },
+    {
+      "file": "media/region-kulagangri-silhouette.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019796275224.jpg",
+      "bytes": 309411,
+      "sha256": "e0d44d7cfcc9f7b422ab0c2c91b0a876ae238fc2743ae1583e8410bef8411883"
+    },
+    {
+      "file": "media/route-ali-hero.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019773777940.jpg",
+      "bytes": 489491,
+      "sha256": "ee61420abcb0516fed2ef9976513bfc7e620829d045c6212fd131ea992fcbdd0"
+    },
+    {
+      "file": "media/route-kulagangri-lake.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019792000180.jpg",
+      "bytes": 479805,
+      "sha256": "b786f4e9d139f8cb35eb1b1418ad53d5fcedd58785ce1b2aee5e5a8341f25c05"
+    },
+    {
+      "file": "media/wufang-lockup-final-v1-transparent.svg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019807109140.svg",
+      "bytes": 45600,
+      "sha256": "6ee40794996c6f5974cffd35d1c456e605603574159ace315f2da58bd756e266"
+    },
+    {
+      "file": "media/wufang-mark-micro-v7.svg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019796275240.svg",
+      "bytes": 726,
+      "sha256": "d1f6443d7851b317b2e109fe1deedf9e8af482f6ba7fe4cfa87faf0eac8f2f3d"
+    },
+    {
+      "file": "media/wufang-mark-v36-inkgrain.svg",
+      "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019796276312.svg",
+      "bytes": 8024,
+      "sha256": "437ec8eba25677dde9148fd2fe4946d9948fd42602527eb76aa42d86f22ddbcc"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+/* Wufang Mobile Design System · component contract */
+:root {
+  --ds-color-ink: #222;
+  --ds-color-paper: #fff;
+  --ds-color-blue: #245b64;
+  --ds-color-red: #d85b4e;
+  --ds-color-muted: #6f716d;
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 16px;
+  --ds-space-4: 24px;
+  --ds-space-5: 32px;
+  --ds-radius-control: 10px;
+  --ds-radius-card: 16px;
+  --ds-radius-pill: 999px;
+  --ds-motion-fast: 160ms;
+  --ds-motion-base: 240ms;
+  --ds-motion-slow: 420ms;
+}
+
+.ds-icon { flex: 0 0 auto; }
+.ds-topbar { isolation: isolate; }
+.ds-icon-button { min-width: 44px; min-height: 44px; }
+.ds-nav-item { min-height: 44px; }
+.ds-search-pill { min-height: 58px; border-radius: var(--ds-radius-pill); }
+.ds-route-card { border-radius: var(--ds-radius-card); }
+.ds-action-row { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: var(--ds-space-2); }
+.ds-action-row > * { min-height: 48px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f1e9">
+  <meta name="description" content="无方旅行：从拉萨向西，探索阿里与冈仁波齐路线，找到自己的旅行方式。">
+  <title>无方旅行 · 远方，不止一种走法</title>
+  <link rel="icon" href="./media/wufang-mark-micro-v7.svg">
+  <link rel="preload" as="image" href="./media/route-ali-hero.jpg">
+  <link rel="stylesheet" href="./src/wufang/styles.css">
+  <link rel="stylesheet" href="./src/wufang/booking.css">
+  <link rel="stylesheet" href="./src/wufang/styles-tibet.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="无方旅行首页"><img src="./media/wufang-lockup-final-v1-transparent.svg" alt="无方旅行" width="64" height="64"><span>WUFANG TRAVEL<small>有人托底的自由旅行</small></span></a>
+    <nav class="desktop-nav" aria-label="主导航"><a href="#route-index">路线</a><a href="#routes">路线详情</a><a href="#field">路上记录</a><a href="#about">关于无方</a><button data-action="orders">我的订单</button></nav>
+    <div class="header-actions"><button class="header-contact" data-action="inquiry">咨询 <span aria-hidden="true">↗</span></button><button class="header-book" data-action="booking">选团期 ↗</button></div>
+  </header>
+
+  <main id="main">
+    <section class="hero journal-cover" id="home" aria-labelledby="hero-title">
+      <img id="hero-image" class="hero-image" src="./media/route-ali-hero.jpg" alt="阿里湖岸，一位旅行者走过雪山前" fetchpriority="high" width="1920" height="1080">
+      <div class="hero-shade"></div><div class="cover-weave" aria-hidden="true"></div>
+      <div class="hero-top"><span>西藏 · 无方高原旅行</span><span>JOURNEYS INTO TIBET</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">雪山之间，自有天地</p><h1 id="hero-title">山河辽阔，<br><em>自在无方。</em></h1>
+        <p class="hero-description">从拉萨向西，去湖泊与雪山之间。<br>复杂的路交给我们，路上的余地留给你。</p>
+        <div class="hero-actions"><a class="button button-light" href="#route-index">查看本期路线 <span aria-hidden="true">↓</span></a><button class="cover-text-action" data-action="quiz"><span data-passport-label>生成旅人护照</span> ↗</button></div>
+        <div class="cover-footnote"><span class="cover-seal" aria-hidden="true">藏地<br>行记</span><p>不止抵达，<br>更在于一路如何感受。</p></div>
+      </div>
+      <div class="hero-bottom">
+        <div class="hero-pagination" role="group" aria-label="风景轮播"><span id="hero-count">01 / 04</span><span id="hero-caption">阿里 · 在湖岸慢下来</span><button class="hero-play" data-action="hero-play" aria-label="暂停风景轮播">暂停</button><button data-action="hero-prev" aria-label="上一张风景">←</button><button data-action="hero-next" aria-label="下一张风景">→</button></div>
+        <p class="cover-coordinate">WUFANG · FIELD NOTES</p>
+      </div>
+    </section>
+
+    <section class="portal-section" aria-label="快捷入口">
+      <p class="portal-intro"><span>把时间，交还给山河。</span><span>YOUR OWN WAY TO TIBET</span></p>
+      <div class="portal-grid">
+        <a href="#route-index"><span class="portal-icon" aria-hidden="true">01</span><strong>选一段旅程</strong><small>阿里 · 冈仁波齐</small></a>
+        <a href="#field"><span class="portal-icon" aria-hidden="true">02</span><strong>看看路上的光</strong><small>来自高原的影像</small></a>
+        <button data-action="quiz"><span class="portal-icon" aria-hidden="true">03</span><strong>找到自己的节奏</strong><small>一张旅人护照</small></button>
+        <button data-action="booking"><span class="portal-icon" aria-hidden="true">04</span><strong>给远方留点时间</strong><small>选日期 · 预订演示</small></button>
+      </div>
+    </section>
+
+    <section class="route-index section" id="route-index" aria-labelledby="route-index-title">
+      <div class="index-heading"><div><p class="eyebrow">01 / THE HIGH PLATEAU COLLECTION</p><h2 id="route-index-title">两条路，<br>慢慢读懂西藏。</h2></div><p class="body-copy">沿着湖泊与雪山，慢慢向西。<br>或走近冈仁波齐，给行走更多时间。</p></div>
+      <div class="route-card-grid">
+        <button class="route-card" data-route="ten" data-route-card data-open-route aria-pressed="true">
+          <img src="./media/route-ali-hero.jpg" alt="阿里湖岸与远处雪山" loading="lazy"><span class="route-card-shade"></span><span class="route-card-index">01</span><span class="route-card-days"><b>10</b> DAYS</span><span class="route-card-copy"><small>ALI LOOP</small><strong>阿里大环线</strong><em>湖泊 · 雪山 · 古格</em></span><span class="route-card-arrow">打开路线 ↗</span>
+        </button>
+        <button class="route-card route-card-offset" data-route="thirteen" data-route-card data-open-route aria-pressed="false">
+          <img src="./media/region-kora-kailash.jpg" alt="云层下的冈仁波齐" loading="lazy"><span class="route-card-shade"></span><span class="route-card-index">02</span><span class="route-card-days"><b>13</b> DAYS</span><span class="route-card-copy"><small>KAILASH KORA</small><strong>冈仁波齐转山环线</strong><em>阿里 · 转山 · 行走</em></span><span class="route-card-arrow">打开路线 ↗</span>
+        </button>
+      </div>
+      <p class="route-index-note">价格、团期与可订状态，以最终确认单为准。</p>
+    </section>
+
+    <section class="routes-section" id="routes" aria-labelledby="route-detail-title">
+      <div class="route-detail-cover">
+        <img id="route-detail-image" src="./media/route-ali-hero.jpg" alt="阿里湖岸与远处雪山" loading="lazy"><div class="route-detail-shade"></div>
+        <p class="route-detail-number"><span id="route-detail-days">10</span><small>DAYS</small></p>
+        <div class="route-detail-copy"><p id="route-detail-latin">ALI LOOP</p><h2 id="route-detail-title">阿里大环线</h2><p id="route-detail-summary">湖泊、雪山与古格，组成一条从拉萨向西的高原环线。</p></div>
+      </div>
+      <nav class="route-subnav" aria-label="路线详情导航"><a href="#route-overview">概览</a><a href="#route-journey">逐日行程</a><a href="#route-notes">出发须知</a></nav>
+
+      <div class="route-detail-body">
+        <p class="route-switch-hint">切换路线查看详情 <span aria-hidden="true">↓</span></p>
+        <div class="route-selector" role="group" aria-label="选择旅行路线">
+          <button data-route="ten" aria-pressed="true"><b>10</b><span>天 · 阿里大环线<small>湖泊、雪山与古格</small></span><span class="route-state">正在查看</span></button>
+          <button data-route="thirteen" aria-pressed="false"><b>13</b><span>天 · 冈仁波齐转山环线<small>在远方，再走深一点</small></span><span class="route-state">点击切换</span></button>
+        </div>
+
+        <section class="route-overview" id="route-overview" aria-labelledby="overview-title">
+          <div class="route-section-heading"><p class="eyebrow">01 / OVERVIEW</p><h3 id="overview-title">把地图摊开，<br>让远方具体一点。</h3></div>
+          <div class="route-facts"><div><span>路线天数</span><strong id="route-duration">10 天</strong></div><div><span>出发 / 返回</span><strong>拉萨</strong></div><div class="route-price-block"><span>资料参考价 · 非即时报价</span><strong id="route-price" aria-live="polite">¥14,800 / 人</strong></div><div class="route-status-block"><span>公开团期</span><strong>待品牌方确认</strong></div></div>
+          <p class="micro price-note">价格来自现有行程资料，非即时报价；团期、费用、可订状态与退改规则需另行确认。</p>
+          <div class="booking-route-entry"><p><strong>给这段旅程，选一个开始。</strong>选日期、确认同行人，体验完整预订与支付。演示不会扣款。</p><button class="button button-dark" data-action="booking">选团期 · 预订演示 <span aria-hidden="true">↗</span></button></div>
+          <div class="route-explorer">
+            <div class="map-side"><div class="map-heading"><span id="map-route-label">ALI LOOP / 10 DAYS</span><span>点选地名探索 ↙</span></div>
+              <div class="map-board" aria-label="路线互动示意图">
+                <svg class="terrain" viewBox="0 0 600 380" aria-hidden="true"><g class="contours"><path d="M-60 130Q100 -20 240 80T670 20M-60 148Q110 -3 240 98T670 38M-60 166Q120 14 240 116T670 56M-60 184Q130 31 240 134T670 74M-60 202Q140 48 240 152T670 92M-60 220Q150 65 240 170T670 110M-40 325Q160 195 320 290T640 260M-40 343Q170 213 320 308T640 278M-40 361Q180 231 320 326T640 296M-40 379Q190 249 320 344T640 314"/></g><path class="map-route-shadow" d="M504 243Q471 293 384 289T294 201Q249 182 168 137T84 186Q96 230 226 209T444 110Q509 110 504 243"/><path class="map-route-line" d="M504 243Q471 293 384 289T294 201Q249 182 168 137T84 186Q96 230 226 209T444 110Q509 110 504 243"/><text x="220" y="96" class="map-land-label">阿 里 地 区</text><text x="220" y="345" class="map-range-label">H I M A L A Y A S</text></svg>
+                <div id="map-pins"></div><span class="map-compass" aria-hidden="true">N<br>↑</span>
+              </div><p class="map-note">路线示意，非导航地图。实际行程以最终确认单为准。</p>
+            </div>
+            <article class="stop-card" aria-live="polite"><div class="stop-photo-wrap"><img id="stop-image" src="./media/region-kora-kailash.jpg" alt="云层下的冈仁波齐" loading="lazy"><span id="stop-count">04 / 06</span></div><div class="stop-copy"><p class="eyebrow" id="stop-kicker">在山前，留一点安静</p><h3 id="stop-title">冈仁波齐</h3><p id="stop-description">先不急着给远方一个答案。雪山在眼前，让自己的节奏慢下来。</p><button class="text-button" data-action="view-stop-day">在逐日行程中查看 <span aria-hidden="true">↓</span></button></div></article>
+          </div>
+        </section>
+
+        <section class="route-journey" id="route-journey" aria-labelledby="journey-title">
+          <div class="route-section-heading"><p class="eyebrow">02 / JOURNEY</p><h3 id="journey-title">一天一天，<br>把路走清楚。</h3></div>
+          <details class="itinerary" id="itinerary" open><summary><span>完整逐日安排 <small id="itinerary-count">10 天路线 + 抵达日</small></span><span class="expand-icon" aria-hidden="true">+</span></summary><div class="itinerary-inner"><p class="itinerary-note">以下海拔为原资料标注的当晚停留海拔，<b>不是路线最高海拔</b>。酒店为参考，需出发前再次确认。转山路线的最高点、每日步行负荷与适应安排需单独沟通。</p><div id="day-list"></div></div></details>
+        </section>
+
+        <section class="route-notes" id="route-notes" aria-labelledby="notes-title">
+          <div class="route-section-heading"><p class="eyebrow">03 / BEFORE YOU GO</p><h3 id="notes-title">自由之前，<br>先把边界说清楚。</h3></div>
+          <div class="note-grid"><article><span>01</span><h4>关于海拔</h4><p>页面展示的是当晚停留海拔，不等于路线最高海拔，也不构成身体适应判断。</p></article><article><span>02</span><h4>关于住宿</h4><p>酒店名称来自现有资料，房型、替换标准与转山补给点条件仍需出发前确认。</p></article><article><span>03</span><h4>关于预订</h4><p>可以体验选日期、下单与模拟支付，但不建立真实预订。正式团期、费用与退改规则以最终确认单为准。</p></article></div>
+          <div class="route-bottom"><p>不急着做决定。<br>先把时间、路线与顾虑放在一起。</p><button class="button button-dark" data-action="inquiry">行程咨询 <span aria-hidden="true">↗</span></button></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section discover" id="discover" aria-labelledby="discover-title">
+      <div class="discover-copy"><p class="eyebrow">TRAVELER PROFILE / 旅人护照</p><h2 id="discover-title">不是给你贴标签，<br>是先找到自己的节奏。</h2><p class="body-copy">回答六个关于时间、风景和行走方式的小问题，生成一张旅行偏好护照。它可以保存，也可以成为第一次咨询的开场。</p><button class="button button-dark" data-action="quiz"><span data-passport-label>生成旅人护照</span> <span aria-hidden="true">↗</span></button><p class="passport-purpose">约 1 分钟 · 无需登录 · 选择仅保存在当前浏览器<br>旅行偏好不等于高原适应评估</p></div>
+      <div class="passport-teaser" aria-hidden="true"><img class="teaser-photo" src="./media/region-kulagangri-silhouette.jpg" alt="" loading="lazy"><div class="teaser-passport"><div class="teaser-top"><span>无方 · 旅人护照</span><span>№ 001</span></div><p>下一站，<br><em>更像自己。</em></p><div class="teaser-stamp">只属于你<br><span>YOUR OWN WAY</span></div><div class="teaser-bottom"><span>TRAVELER, NOT TOURIST.</span><span>↗</span></div></div><p class="teaser-caption">把旅途变成一次认识自己的开始。</p></div>
+    </section>
+
+    <section class="section field-section" id="field" aria-labelledby="field-title">
+      <div class="section-heading"><div><p class="eyebrow">FIELD NOTES / 路上记录</p><h2 id="field-title">先看见真实的路，<br>再想象自己在其中。</h2></div><p class="body-copy">现有品牌路线影像。<br>点击进入一组现场切片。</p></div>
+      <div class="field-grid">
+        <button class="field-item" data-gallery="ali"><div class="field-image"><img src="./media/proof-ali-vehicle.jpg" alt="阿里雪山前的越野车辆" loading="lazy"><span>01</span></div><div class="field-meta"><span>ALI / 阿里</span><span>车辆、装备与一路托底</span></div><h3>自由的背后，<br>有人认真准备。</h3></button>
+        <button class="field-item" data-gallery="kora"><div class="field-image"><img src="./media/region-kora-kailash.jpg" alt="冈仁波齐山体" loading="lazy"><span>02</span></div><div class="field-meta"><span>KAILASH / 冈仁波齐</span><span>行走，和自己的节奏</span></div><h3>山在那里，<br>不催你赶路。</h3></button>
+        <button class="field-item" data-gallery="lake"><div class="field-image"><img src="./media/region-kulagangri-golden.jpg" alt="库拉岗日金色雪峰" loading="lazy"><span>03</span></div><div class="field-meta"><span>LIGHT / 光落下来</span><span>湖泊与片刻停留</span></div><h3>留一点空白，<br>给意料之外。</h3></button>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-intro"><p class="eyebrow">THE WUFANG WAY</p><h2>无方，<br>不是没有方向。</h2><p class="body-copy">我们相信，自由不是把一切交给运气。<br>把能确认的事说清楚，才有安心感受的余地。</p></div>
+      <div class="principles"><p class="principles-label">我们的三个做事原则</p><article><span>01</span><div><h3>把路线摊开说</h3><p>每天去哪里、住在哪里、需要怎样的准备，不等出发后才知道。</p></div></article><article><span>02</span><div><h3>把不确定也说出来</h3><p>天气、路况与高原环境不会按剧本走。调整空间与服务边界，提前沟通。</p></div></article><article><span>03</span><div><h3>先聊清楚，再出发</h3><p>你的期待和顾虑同样重要。没有一份问答，能替代真实沟通和必要的专业评估。</p></div></article></div>
+    </section>
+
+    <section class="closing section"><div class="closing-weave" aria-hidden="true"></div><p class="eyebrow">WHEN YOU ARE READY</p><h2>下一段路，<em>一起聊聊。</em></h2><button class="button button-light" data-action="inquiry">行程咨询 <span aria-hidden="true">↗</span></button><p>不急着下单。先把时间、路线和期待放在一起。</p></section>
+  </main>
+
+  <footer><span>WUFANG TRAVEL · 无方旅行</span><span>藏地山居 V2.3 / 支付演示不扣款</span><a href="#home">回到开始 ↑</a></footer>
+  <nav class="bottom-nav" aria-label="手机快捷导航"><a href="#home" data-nav="home" aria-current="location"><span>⌂</span>首页</a><button data-action="booking"><span>⌁</span>选团期</button><button data-action="quiz"><span>◇</span>旅人护照</button><button data-action="orders"><span>▤</span>我的订单</button></nav>
+
+  <dialog id="booking-dialog" class="booking-dialog" aria-labelledby="booking-title"><div class="dialog-top"><button class="dialog-back" data-back>← 返回页面</button><span>无方 · 下一段旅程</span><button class="icon-button" data-close aria-label="关闭预订演示，返回页面">×</button></div><div id="booking-content"></div></dialog>
+
+  <dialog id="quiz-dialog" class="quiz-dialog" aria-labelledby="quiz-title"><div class="dialog-top"><button class="dialog-back" data-back>← 返回页面</button><span>旅人护照</span><button class="icon-button" data-close aria-label="关闭护照，返回页面">×</button></div><div id="quiz-content"></div></dialog>
+  <dialog id="inquiry-dialog" class="inquiry-dialog" aria-labelledby="inquiry-title"><div class="dialog-top"><button class="dialog-back" data-back>← 返回页面</button><span>行程咨询</span><button class="icon-button" data-close aria-label="关闭咨询，返回页面">×</button></div><div class="inquiry-body"><p class="eyebrow">一段真实沟通的开始</p><h2 id="inquiry-title" tabindex="-1">把想法，带给无方。</h2><p class="muted">把路线、时间与偏好整理成清单，再由你复制发给客服。生成清单不会提交信息，也不会自动发起聊天。</p><ol class="inquiry-steps" aria-label="咨询流程"><li data-inquiry-step="1" aria-current="step"><b>01</b> 填写想法</li><li data-inquiry-step="2"><b>02</b> 生成清单</li><li><b>03</b> 复制后自行发送</li></ol><form id="inquiry-form"><label>我想了解的路线<select name="route"><option value="ten">10 天 · 阿里大环线</option><option value="thirteen">13 天 · 冈仁波齐转山环线</option><option value="unsure">还没决定，想先聊聊</option></select></label><div class="form-row"><label>预计出发时间<input name="date" type="month"></label><label>同行人数<select name="people"><option>1 人</option><option>2 人</option><option>3–4 人</option><option>5 人及以上</option><option>还没确定</option></select></label></div><label>这次最想聊什么？<textarea name="note" rows="3" maxlength="300" placeholder="例如：想了解每天的车程、住宿与沿途停留。请勿填写健康或证件信息。"></textarea></label><label class="checkbox-label"><input name="includeProfile" type="checkbox"><span>附上我的旅人护照偏好<span id="profile-availability">（尚未生成）</span></span></label><button class="button button-dark" type="submit">生成咨询清单 <span aria-hidden="true">↗</span></button></form><div id="inquiry-result" hidden><p class="inquiry-next">清单已生成，还没有发送。<br>你可以先编辑，再复制给品牌联系人。</p><label for="inquiry-text">你的咨询清单 · 可编辑后复制</label><textarea id="inquiry-text" rows="9"></textarea><div class="action-row"><button class="button button-dark" data-action="copy-inquiry">复制清单</button><button class="button button-outline" data-action="save-inquiry">保存文本</button></div><button class="text-button" data-action="edit-inquiry">← 修改咨询信息</button></div><p class="privacy-note">正式客服微信 / 二维码待品牌方确认。你可以先复制或保存清单，待确认官方联系方式后发送。</p></div></dialog>
+  <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="gallery-title"><div class="dialog-top"><button class="dialog-back" data-back>← 返回页面</button><span>现场影像</span><button class="icon-button" data-close aria-label="关闭影像，返回页面">×</button></div><div class="gallery-body"><h2 id="gallery-title" tabindex="-1"></h2><img id="gallery-image" src="./media/route-ali-hero.jpg" alt=""><div class="gallery-controls"><p id="gallery-caption"></p><div><button class="icon-button" data-action="gallery-prev" aria-label="上一张影像">←</button><span id="gallery-count"></span><button class="icon-button" data-action="gallery-next" aria-label="下一张影像">→</button></div></div><p class="micro">品牌方提供的路线实拍。扩展区域影像不代表已开放预订。</p></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">浏览路线与生成护照需要开启 JavaScript。当前页面不提供在线预订。</p></noscript>
+  <script type="module" src="./src/wufang/app.js"></script>
+</body>
+</html>

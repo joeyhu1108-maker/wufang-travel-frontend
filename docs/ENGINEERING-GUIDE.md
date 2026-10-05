@@ -29,15 +29,17 @@ Vite 绑定 `127.0.0.1`。按终端实际地址打开 `/mobile-design/index.html
 | 命令 | 检查范围／输出 |
 | --- | --- |
 | `npm run check` | 已列出的前端模块语法检查，不是全仓库类型检查 |
-| `npm test` | 早期 H5 与 `test/` 的 Node 自动测试，目前 109 项 |
-| `npm run build` | Vite 打包根 H5、独立三维入口，复制 public 静态资源 |
+| `npm test` | 早期 H5 与 `test/` 的 Node 自动测试，目前 111 项 |
+| `npm run build` | Vite 打包根 H5、独立三维入口；public 静态资源由 `scripts/guarded-public-copy.mjs` 复制，卡住时报出文件并失败 |
 | `npm run verify` | 语法 → 测试 → 构建 → `scripts/verify-build.mjs` 资源检查 |
 | `npm run preview` | 已构建 dist 的本地检查，不是公网部署 |
 | `npm run check:miniprogram` | 原生静态完整性及内部主包估算，允许报告上线阻断 |
 | `npm run check:release` | 严格发布门禁，当前应失败，不要删检查让它变绿 |
 | `npm run audit:cloud` | 独立云函数的生产依赖审计，需要网络 |
 
-本轮 `verify` 的构建在 Vite 模块转换后停滞约 5 分钟，已中止；语法／109 项测试通过不等于 `verify` 通过。Shawn 需记录系统、Node、安装结果、完整构建日志和退出状态，单独排查后复跑。现有 dist 或旧构建记录不能替代新构建成功，不要盲目更新锁文件／升级打包器。
+2026-10-06 的构建停滞已有结论：干净克隆（macOS、Node 24.21.0、`npm ci`）下 `npm run verify` 全程通过，停滞不在源码或锁文件。Vite 在「modules transformed」之后用同步文件调用清空 dist 并复制 public；public 里任何一个当时读不出来的文件（未下载的云盘占位文件、管道、失联挂载）都会让进程无输出地挂住，Node 也无法自行退出。现在由 `scripts/guarded-public-copy.mjs` 在子进程中复制 public：同一条目 30 秒无进展即终止构建并报出具体路径，产物与原先逐字节一致。
+
+原机器上具体是哪个文件尚未确认，需在该机器复跑，按报出的路径处理。若仍停在「modules transformed」且没有报出路径，剩余嫌疑是清空旧 dist，先手动删除 dist 再跑。现有 dist 或旧构建记录不能替代新构建成功，不要盲目更新锁文件／升级打包器。
 
 `vite.config.js` 使用相对 base、资源不内联，MapLibre 排除预优化。`public/mobile-design/` 是静态 ES Modules，媒体采用 `../media/...`；发布需保持目录结构。3D／天气仍有外部服务，不是全离线工程。修改后先构建和资源检查，再做目标尺寸及弱网检查；本次只做 GitHub 交接，未部署应用。
 

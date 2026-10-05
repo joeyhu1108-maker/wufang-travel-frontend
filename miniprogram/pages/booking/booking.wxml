@@ -1,0 +1,20 @@
+<view class="page">
+  <view class="status" wx:if="{{loading}}">正在加载路线…</view>
+  <view wx:elif="{{!route}}"><view class="error">{{error}}</view><button class="button secondary" bindtap="loadRoute">重新加载</button></view>
+  <block wx:elif="{{!submitted}}">
+    <view class="eyebrow">PLAN YOUR JOURNEY</view><view class="title">咨询出行安排</view><view class="muted intro">{{route.title}} · 提交咨询不占用名额</view>
+    <view class="form card">
+      <view class="field"><view class="label">你的称呼</view><input value="{{name}}" maxlength="40" placeholder="怎么称呼你？" data-field="name" bindinput="onInput" disabled="{{submitting}}"/></view>
+      <view class="field"><view class="label">联系电话</view><input value="{{phone}}" type="number" maxlength="11" placeholder="方便我们联系你" data-field="phone" bindinput="onInput" disabled="{{submitting}}"/></view>
+      <view class="field"><view class="label">意向出发日期</view><picker mode="date" start="{{today}}" value="{{date}}" bindchange="onDateChange" disabled="{{submitting}}"><view class="picker {{date ? '' : 'placeholder'}}">{{date || '选择意向日期'}}</view></picker></view>
+      <view class="field"><view class="label">同行人数 · 1–6 人</view><input type="number" maxlength="1" value="{{people}}" data-field="people" bindinput="onInput" disabled="{{submitting}}"/></view>
+    </view>
+    <checkbox-group bindchange="onConsentChange"><label class="consent"><checkbox value="consent" checked="{{consent}}" disabled="{{submitting}}" color="#1e4b4a"/><text>已阅读隐私说明，同意保存咨询信息</text></label></checkbox-group>
+    <button class="text-button" bindtap="openPrivacy">查看隐私说明 ›</button>
+    <view class="error" wx:if="{{error}}">{{error}}</view>
+    <button class="button submit" bindtap="submit" loading="{{submitting}}" disabled="{{submitting}}">{{submitting ? '正在提交' : '提交咨询'}}</button>
+  </block>
+  <view class="success card" wx:else>
+    <view class="success-mark">✓</view><view class="title">咨询已保存</view><view class="muted">团队收到你的信息后会联系你。咨询不代表已报名或已付款。</view><view class="muted receipt">编号：{{inquiryId}}</view><button class="button" bindtap="backHome">回到首页</button>
+  </view>
+</view>

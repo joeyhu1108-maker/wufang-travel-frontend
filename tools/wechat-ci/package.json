@@ -1,0 +1,12 @@
+{
+  "name": "wufang-wechat-ci-tools",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "check": "node preview.cjs",
+    "preview": "node preview.cjs --send"
+  },
+  "dependencies": {
+    "miniprogram-ci": "2.1.31"
+  }
+}

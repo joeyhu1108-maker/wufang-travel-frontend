@@ -1,0 +1,22 @@
+page {
+  background: #f7f5ef;
+  color: #203332;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+}
+
+.page { padding: 28rpx 36rpx 56rpx; box-sizing: border-box; }
+.eyebrow { color: #b77b45; font-size: 22rpx; letter-spacing: 3rpx; }
+.title { color: #173f3e; font-size: 52rpx; line-height: 1.12; font-weight: 600; }
+.muted { color: #7b817c; font-size: 26rpx; line-height: 1.6; }
+.card { background: #fffdf8; border: 1rpx solid #e9e4d9; border-radius: 28rpx; box-shadow: 0 14rpx 40rpx rgba(31, 62, 60, .06); }
+.button { background: #1e4b4a; color: #fffdf8; border-radius: 999rpx; font-size: 28rpx; line-height: 92rpx; height: 92rpx; text-align: center; }
+.button.secondary { background: #e7efe9; color: #1e4b4a; }
+.section-title { color: #173f3e; font-size: 34rpx; font-weight: 600; }
+.status { padding: 36rpx 0; color: #7b817c; font-size: 28rpx; line-height: 1.6; }
+.error { color: #9b3b2d; font-size: 28rpx; line-height: 1.6; margin: 24rpx 0; }
+.button { border: 0; padding: 0 28rpx; min-height: 92rpx; height: auto; box-sizing: border-box; white-space: normal; }
+.button::after { border: 0; }
+.button[disabled] { opacity: .5; }
+.text-button { padding: 12rpx 16rpx; margin: 0; background: transparent; color: #1e4b4a; font-size: 28rpx; line-height: 64rpx; }
+.text-button::after { border: 0; }
+.title, .route-title, .muted { overflow-wrap: anywhere; }

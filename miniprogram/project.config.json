@@ -1,0 +1,10 @@
+{
+  "description": "无方旅行原生小程序",
+  "packOptions": { "ignore": [{ "type": "file", "value": "package.json" }] },
+  "setting": { "es6": true, "postcss": true, "minified": true, "urlCheck": true },
+  "compileType": "miniprogram",
+  "libVersion": "3.8.8",
+  "appid": "wx1fbdcb6d1a97d174",
+  "projectname": "wufang-travel-miniprogram",
+  "miniprogramRoot": "./"
+}

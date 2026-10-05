@@ -1,0 +1,49 @@
+/* Real journey imagery, using the existing quiet paper-and-ink palette. */
+.companions-teaser { margin-top: 42px; padding-top: 30px; border-top: 1px solid var(--line); }
+.companion-kicker { margin: 0 0 10px; color: var(--muted); font-size: 12px; line-height: 1.6; letter-spacing: .08em; }
+.companions-teaser h2 { margin: 0 0 20px; font: 500 24px/1.5 var(--serif); }
+.companion-visual { display: block; width: 100%; padding: 0; position: relative; overflow: hidden; background: #e8e9e3; border-radius: 4px; }
+.companion-visual > img { display: block; width: 100%; height: auto; }
+.companions-teaser > p:not(.companion-kicker) { margin: 18px 0 4px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.companion-link { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 48px; gap: 12px; padding: 12px 0; text-align: left; font-size: 14px; }
+.companion-link .icon { width: 18px; height: 18px; }
+.companions-screen { background: #f8f6f0; --ink: #272c29; --muted: #686d68; --line: #dedfd7; color: var(--ink); padding-bottom: 32px; }
+.companions-topbar { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; text-align: center; }
+.companions-topbar > span { font-size: 14px; }
+.companions-intro { padding: 28px 24px 32px; }
+.companions-intro h1 { margin: 0 0 18px; font: 500 32px/1.5 var(--serif); }
+.companions-intro > p:last-child { margin: 0; font-size: 14px; line-height: 1.9; color: var(--muted); }
+.companions-gallery { padding: 0 24px; }
+.companion-figure { margin: 0 0 32px; min-width: 0; }
+.companion-figure figcaption { padding: 14px 0 0; }
+.companion-figure figcaption strong { display: block; font-weight: 500; font-size: 16px; line-height: 1.6; }
+.companion-figure figcaption > span { display: block; margin-top: 5px; font-size: 13px; color: var(--muted); line-height: 1.8; }
+.companion-section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 34px 0 18px; }
+.companion-section-head h2 { margin: 0; font: 500 20px/1.5 var(--serif); }
+.companion-section-head > span { color: var(--muted); white-space: nowrap; font-size: 12px; }
+.companion-video-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+.companion-video-pair .companion-visual { background: #1e2b31; }
+.companion-video-pair .companion-visual img { width: 100%; height: auto; }
+.companion-video-pair .companion-figure:last-child { margin-top: 42px; }
+.companion-video-pair figcaption strong { font-size: 14px; }
+.companion-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid #ffffffb3; border-radius: 50%; background: #172b2266; color: white; }
+.companion-play svg { width: 20px; height: 20px; }
+.companion-duration { display: block; background: #253c35; color: white; padding: 7px 10px; text-align: left; font-size: 11px; font-variant-numeric: tabular-nums; }
+.companion-film .companion-play { top: calc((100% - 30px) / 2); }
+.companion-source { margin: 0; padding: 18px 0; border-top: 1px solid var(--line); font-size: 12px; line-height: 1.8; color: var(--muted); }
+.companions-outro { padding: 20px 0 12px; text-align: center; }
+.companions-outro .brand-logo { display: block; margin: 0 auto; }
+.companions-outro p { font: 500 24px/1.7 var(--serif); margin: 4px 0 24px; }
+.route-companions { margin: 28px 0; }
+.route-companions .companion-figure { margin-bottom: 0; }
+.route-companions .companion-link { border-bottom: 1px solid var(--line); }
+.mine-companions { margin-top: 28px; border-top: 1px solid var(--line); }
+.mine-companions .companion-link { padding: 18px 0; }
+#sheet.is-companion-viewer { background: #f8f6f0; }
+.companion-player { display: block; width: 100%; height: auto; max-height: 52dvh; background: #152125; object-fit: contain; }
+.companion-full-image { display: block; width: 100%; height: auto; max-height: 52dvh; object-fit: contain; }
+.companion-description, .companion-viewer-caption, .companion-media-error { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 14px 0 0; }
+.companion-media-error { color: #a3493d; }
+.companion-visual:focus-visible, .companion-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+@media (hover: hover) { .companion-link:hover { text-decoration: underline; text-underline-offset: 4px; } }
+@media (max-width: 359px) { .companions-gallery { padding: 0 20px; } .companions-intro { padding-left: 20px; padding-right: 20px; } .companions-intro h1 { font-size: 28px; } .companion-video-pair { gap: 10px; } }

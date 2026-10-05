@@ -1,0 +1,4 @@
+.intro { margin: 20rpx 0 34rpx; }.form { padding: 8rpx 30rpx; }.field { padding: 28rpx 0; border-bottom: 1rpx solid #eee9df; }.field:last-child { border-bottom: 0; }.label { color: #7b817c; font-size: 22rpx; margin-bottom: 12rpx; }.field input, .picker { color: #203332; font-size: 30rpx; }.placeholder { color: #a6aaa5; }.submit { margin-top: 34rpx; }.success { padding: 72rpx 44rpx; text-align: center; min-height: 680rpx; box-sizing: border-box; }.success-mark { width: 96rpx; height: 96rpx; line-height: 96rpx; margin: 0 auto 40rpx; border-radius: 50%; background: #e7efe9; color: #1e4b4a; font-size: 52rpx; }.success .muted { margin: 30rpx 0 54rpx; }
+.consent { display: flex; align-items: flex-start; gap: 12rpx; font-size: 26rpx; line-height: 1.7; padding-top: 30rpx; }
+.consent checkbox { flex-shrink: 0; }
+.receipt { overflow-wrap: anywhere; }

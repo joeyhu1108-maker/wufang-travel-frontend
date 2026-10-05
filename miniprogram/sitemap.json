@@ -1,0 +1,4 @@
+{
+  "desc": "无方旅行原生小程序",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

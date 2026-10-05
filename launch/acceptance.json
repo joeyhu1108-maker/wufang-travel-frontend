@@ -1,0 +1,17 @@
+{
+  "version": "2026-10-05",
+  "note": "pending 表示未验收。只能依据真实环境证据改为 passed，不得使用 H5 演示或本地单元测试代替。证据文件禁止包含密钥、完整手机号、身份证或 OPENID。",
+  "checks": [
+    { "id": "client-scope", "title": "甲方确认本期功能、正式路线、条款和素材授权", "owner": "甲方与交付方", "status": "pending", "evidence": "" },
+    { "id": "account-category", "title": "企业主体、认证、服务类目、资质及小程序备案通过", "owner": "甲方", "status": "pending", "evidence": "" },
+    { "id": "native-parity", "title": "原生版完成探索、社区、团期、结算、订单、退款及后台", "owner": "交付方", "status": "pending", "evidence": "" },
+    { "id": "cloud-live", "title": "正式云环境、可信身份、数据隔离、上传权限与监控联调", "owner": "交付方，甲方授权", "status": "pending", "evidence": "" },
+    { "id": "inventory-concurrency", "title": "最后名额并发不超卖、30 分钟未付款释放及线上线下同步", "owner": "交付方与运营", "status": "pending", "evidence": "" },
+    { "id": "payment-refund", "title": "授权小额真支付、回调验签、查单、重复回调及原路退款", "owner": "交付方，甲方商户授权", "status": "pending", "evidence": "" },
+    { "id": "privacy-content", "title": "隐私拒绝路径、投稿审核、举报处理、删除及授权验证", "owner": "交付方与甲方审核人", "status": "pending", "evidence": "" },
+    { "id": "device-network", "title": "微信 iOS / Android 真机、弱网、导航、视频与 3D 降级验收", "owner": "交付方与甲方", "status": "pending", "evidence": "" },
+    { "id": "security-review", "title": "依赖漏洞处理、服务端权限检查和第三方服务安全复核", "owner": "交付方", "status": "pending", "evidence": "" },
+    { "id": "operations-handoff", "title": "后台培训、备份恢复、应急处理、客服与日常审核负责人确认", "owner": "交付方与甲方", "status": "pending", "evidence": "" },
+    { "id": "review-package", "title": "原生体验版验收、审核截图及说明完成并获授权提交", "owner": "甲方管理员与交付方", "status": "pending", "evidence": "" }
+  ]
+}

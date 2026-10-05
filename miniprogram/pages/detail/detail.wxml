@@ -1,0 +1,7 @@
+<view class="page" wx:if="{{loading}}"><view class="status">正在加载路线…</view></view>
+<view class="page" wx:elif="{{error}}"><view class="error">{{error}}</view><button class="button secondary" bindtap="loadRoute">重试</button><button class="text-button" bindtap="backRoutes">查看其他路线</button></view>
+<view class="detail" wx:elif="{{route}}">
+  <image class="cover" src="{{route.cover}}" mode="aspectFill"/>
+  <view class="detail-body"><view class="eyebrow">{{route.duration}}</view><view class="title">{{route.title}}</view><view class="muted subtitle">{{route.subtitle}}</view><view class="card story"><view class="section-title">这段旅程</view><view class="muted story-copy">{{route.description}}</view><view class="muted story-copy">{{route.altitude}}</view><view class="tags"><text wx:for="{{route.tags}}" wx:key="*this" class="tag">{{item}}</text></view></view></view>
+  <view class="bottom-bar"><view><view class="muted">{{route.preview ? '参考价' : '咨询价'}}</view><view class="price">¥{{route.price}} <text>/人起</text></view></view><button class="button book" bindtap="startBooking">预约咨询</button></view>
+</view>

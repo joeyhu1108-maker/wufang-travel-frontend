@@ -2,6 +2,108 @@
   "sourceCommit": "6dbbbdc9e0cb987f9d53e1e2f471f0068d7703d1",
   "assets": [
     {
+      "file": "media/companions-lakeside.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "9a99d45f1bcc3bc69ee1a1ed129a5dde.jpg",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 449803,
+      "sha256": "bef88e6a9395093be54da93c366808d0b64dc9eb388968cb0b066aef897d8e32"
+    },
+    {
+      "file": "media/companions-walking.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "d0d83c5a602798ee42d97498e6f4274c.jpg",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 323764,
+      "sha256": "159c0e67d4f34831a6e22914bd52bf125d9c0eda668e3c3a050762ddbf758bd4"
+    },
+    {
+      "file": "media/companions-dusk.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "19ae668dd0e091926af090ee79efd1af.jpg",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 183154,
+      "sha256": "0113c72e5877fba0d490dfb7e41235cc89c07515c4a369a0cb9c965ee11b7f57"
+    },
+    {
+      "file": "media/companions-mountain.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "c558af61f8d842acf926ccd66aa7d491.jpg",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 129979,
+      "sha256": "672792ffb907ec1b3cc4d7030bdaf1c1d7dc1c1a85c99f393157c52c3b2fdcd3"
+    },
+    {
+      "file": "media/companions-rest.mp4",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "eb1562a823a8e6c729f02bf70ddf34.mp4",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 1710649,
+      "sha256": "7072a242e875b9c34d34339b1472be8d6f6ab2c5a3d89312446f36013758cd5f"
+    },
+    {
+      "file": "media/companions-bluehour.mp4",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "4f582266be8c033ddbaf585e30415f.mp4",
+      "sourceNote": "Client-provided original; copied unchanged.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 15024411,
+      "sha256": "ad0818a591bcbb202462dae767ee379e11ffc19a853c72667384883735ce10c8"
+    },
+    {
+      "file": "media/companions-rest-poster.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "eb1562a823a8e6c729f02bf70ddf34.mp4",
+      "sourceNote": "Frame at 2 seconds; no crop or grading.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 82964,
+      "sha256": "c3e2e99885094f6cb8934b70a9edc4dddf139cc3df798f11884808c9385a9745"
+    },
+    {
+      "file": "media/companions-bluehour-poster.jpg",
+      "sourceUrl": "https://hvl3us5nps.feishu.cn/docx/S8HKdrlWQovip6xmH8Ac5k9NnZK",
+      "sourceArchive": "阿里大环线10天",
+      "sourceArchiveToken": "NRehbRLxMo5njjxXLZOcblZDnTg",
+      "sourceFile": "4f582266be8c033ddbaf585e30415f.mp4",
+      "sourceNote": "Frame at 6 seconds; no crop or grading.",
+      "rightsStatus": "Client confirmation required for public use, depicted people and any original audio.",
+      "bytes": 35178,
+      "sha256": "ba16e3f249c968aff8b3f16143450c136b334257920cc20331721b1aa8fc123d"
+    },
+    {
+      "file": "media/wufang-opening-seedance25-v1.mp4",
+      "sourceUrl": "https://app.chatcut.io/zh/editor/f0db6e80-98e6-49d6-b53f-46a591d9682a",
+      "sourceAssetId": "fac48856-2261-4aca-82f6-e91851a36e71",
+      "bytes": 18463429,
+      "sha256": "ba9e8c4a40138aaa813d19cd2ab44e672d402b3b2384bb54882bdaa8a6eb1d9c"
+    },
+    {
+      "file": "media/wufang-opening-seedance25-v1.jpg",
+      "sourceUrl": "https://app.chatcut.io/zh/editor/f0db6e80-98e6-49d6-b53f-46a591d9682a",
+      "sourceNote": "First frame extracted from the approved opening video",
+      "bytes": 56766,
+      "sha256": "f238a44cceb5424aa59402e7a1c22cf17f18f295c829cd38df93f72ce4f035bf"
+    },
+    {
       "file": "media/01-road.jpg",
       "sourceUrl": "https://hvl3us5nps.feishuapp.com/spark/app/app_17d6fc497ns/runtime/api/v1/storage/object/bucket_aadksuqpskicq/1875019786638547.jpg",
       "bytes": 655457,

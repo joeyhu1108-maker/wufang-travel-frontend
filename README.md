@@ -1,8 +1,37 @@
 # 无方旅行
 
-当前技术交接请先阅读 [Shawn 接力说明（2026-10-06）](docs/SHAWN-TECHNICAL-HANDOFF-20261006.md)。GitHub 初始 H5 与最新本地移动端／原生小程序准备版本存在差异；真实交易和正式发布尚未完成，详见交接说明。本次先同步技术说明，客户新增素材与最新源码待确认安全移交方式。
+当前交接版本：2026-10-06。最新移动端源码、原生小程序基础、云函数基础、测试、上线准备包与项目配套媒体已纳入本仓库；密钥、私人合同、沟通截图和真实旅客资料不在公开内容中。
+
+**接手从这里开始：[Shawn 技术接力说明](docs/SHAWN-TECHNICAL-HANDOFF-20261006.md)。** 然后阅读 [工程运行与模块详解](docs/ENGINEERING-GUIDE.md)、[全部文档索引](docs/README.md) 和 [上线准备包](launch/README.md)。
+
+## 最新版本快速运行
+
+推荐 Node.js 24；本轮检查使用 Node.js 24.18.0 / npm 11.16.0。
+
+```sh
+git clone https://github.com/joeyhu1108-maker/wufang-travel-frontend.git
+cd wufang-travel-frontend
+npm ci
+npm run dev
+```
+
+在终端显示的地址后加 `/mobile-design/index.html#home`，这是最新移动端体验入口。根路径 `/` 是早期独立 H5；`/explore-field/` 是独立三维场景。不要通过双击 HTML 文件运行。
+
+原生小程序在微信开发者工具导入 `miniprogram/`；云函数单独位于 `cloudfunctions/wufangApi/`。不得将整个仓库作为小程序主包上传。
+
+## 目前能做什么、还不能做什么
+
+- 移动端 H5 可体验首页、选团、探索、开屏、同行影像、账户、报名支付及审核投稿社区的演示动线。
+- 原生目前只有 6 个基础页面；云函数只实现可信身份、路线读取与咨询保存的代码基础，未部署联调。
+- 没有真实订单、库存锁位、支付退款或业务审核后台；H5 的付款／退款按钮不产生真实资金交易。
+- 本轮 109 / 109 自动测试通过；原生静态检查通过；严格发布检查仍有 23 项阻断。构建停滞待排查，不能声称全套验证通过。详见 [当前验证记录](docs/VERIFICATION-20261006.md)。
+- 未生成微信开发预览二维码、上传体验版、提审或正式发布。素材来源记录不授予第三方再分发权。
+
+技术协作与接手反馈集中在 [Issue #1](https://github.com/joeyhu1108-maker/wufang-travel-frontend/issues/1)。
 
 ## 以下为初始独立前端 V2.3 的说明
+
+以下仅适用于早期根路径 H5，保留作为历史说明。最新移动端订单是内存演示，社区是浏览器 IndexedDB；三维／天气依赖外部服务，不能套用下文的离线资源与订单持久化描述。
 
 这是一份可迁移的 H5 源码，基于已发布的无方 V2（源提交 `6dbbbdc9e0cb987f9d53e1e2f471f0068d7703d1`）。使用标准 HTML、CSS、JavaScript ES Modules；Vite 仅负责开发与打包。页面运行不需要飞书 SDK、飞书登录、专用服务器或环境变量。图片与 Logo 随工程交付。
 

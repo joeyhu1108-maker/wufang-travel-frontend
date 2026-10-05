@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="title">隐私说明</view>
+  <block wx:if="{{version && text}}">
+    <view class="muted policy-version">版本：{{version}}</view>
+    <text class="policy-text">{{text}}</text>
+    <view class="muted policy-version" wx:if="{{phone}}">联系客服：{{phone}}</view>
+  </block>
+  <view class="status" wx:else>正式隐私说明尚未确认。当前不接受咨询提交，不会模拟保存成功。</view>
+</view>

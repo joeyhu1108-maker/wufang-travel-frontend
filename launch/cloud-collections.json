@@ -1,0 +1,8 @@
+{
+  "implemented": [
+    { "name": "routes", "ruleFile": "database-rules.json", "indexes": [] },
+    { "name": "inquiries", "ruleFile": "database-rules.json", "indexes": [] },
+    { "name": "inquiry_limits", "ruleFile": "database-rules.json", "indexes": [] }
+  ],
+  "plannedNotImplemented": ["departures", "orders", "payment_events", "refunds", "community_drafts", "community_public", "admin_audit"]
+}

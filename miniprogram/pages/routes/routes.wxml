@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="eyebrow">CURATED JOURNEYS</view><view class="title page-title"><view>选择一条</view><view>适合你的路</view></view>
+  <view class="muted intro">不追赶景点清单，给每一段旅程留出呼吸。</view>
+  <view class="status" wx:if="{{loading}}">正在加载路线…</view>
+  <view wx:elif="{{error}}"><view class="error">{{error}}</view><button class="button secondary" bindtap="loadRoutes">重新加载</button></view>
+  <view class="status" wx:elif="{{!routes.length}}">暂无已上架路线，请稍后再来。</view>
+  <block wx:if="{{!loading && !error}}" wx:for="{{routes}}" wx:key="id">
+    <view class="route-card card" data-id="{{item.id}}" bindtap="openDetail" aria-role="button" aria-label="查看{{item.title}}">
+      <image class="route-cover" src="{{item.cover}}" mode="aspectFill"/>
+      <view class="route-info"><view class="eyebrow">{{item.duration}}</view><view class="route-title">{{item.title}}</view><view class="muted">{{item.description}}</view><view class="route-bottom"><text>{{item.preview ? '参考价' : '咨询价'}} ¥{{item.price}} 起</text><text class="arrow">›</text></view></view>
+    </view>
+  </block>
+</view>

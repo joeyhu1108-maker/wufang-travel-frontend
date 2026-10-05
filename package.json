@@ -3,14 +3,24 @@
   "version": "2.3.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.12.0" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "check": "node --check src/wufang/app.js && node --check src/wufang/model.mjs && node --check src/wufang/navigation.mjs && node --check src/wufang/assets.mjs && node --check src/wufang/booking.mjs && node --check src/wufang/booking-ui.js",
-    "test": "node --test src/wufang/*.test.mjs",
+    "check": "node --check src/wufang/app.js && node --check src/wufang/model.mjs && node --check src/wufang/navigation.mjs && node --check src/wufang/assets.mjs && node --check src/wufang/booking.mjs && node --check src/wufang/booking-ui.js && node --check public/mobile-design/ui.js && node --check public/mobile-design/components.mjs && node --check public/mobile-design/data.mjs && node --check public/mobile-design/explore.mjs && node --check public/mobile-design/opening.mjs && node --check src/explore-field/main.js",
+    "test": "node --test src/wufang/*.test.mjs test/*.test.mjs",
+    "check:miniprogram": "node scripts/check-miniprogram.mjs",
+    "check:release": "node scripts/check-miniprogram.mjs --release",
+    "audit:cloud": "npm --prefix cloudfunctions/wufangApi audit --omit=dev",
     "verify": "npm run check && npm test && npm run build && node scripts/verify-build.mjs"
   },
-  "devDependencies": { "vite": "8.1.4" }
+  "devDependencies": {
+    "vite": "8.1.4"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.7.0"
+  }
 }

@@ -38,8 +38,10 @@ async function inspect(directory){
     if(!/\.(html|js|css)$/.test(entry.name))continue;
     const text=await readFile(path,'utf8');
     assert.doesNotMatch(text,/\/spark\/|feishuapp\.com|miaoda-git|@lark-apaas/,`Platform dependency in ${fileURLToPath(path)}`);
-    assert.doesNotMatch(text,/(?:src|href)=["']https?:|url\(["']?https?:/,`External resource in ${fileURLToPath(path)}`);
+    // MapLibre's license attribution is an outbound link, not a runtime asset.
+    const resources=text.replaceAll('<a href="https://maplibre.org/" target="_blank">MapLibre</a>','MapLibre');
+    assert.doesNotMatch(resources,/(?:src|href)=["']https?:|url\(["']?https?:/,`External resource in ${fileURLToPath(path)}`);
   }
 }
 await inspect(new URL('dist/',root));
-console.log(`Portable build verified: ${manifest.assets.length} media files, relative resources, no platform runtime dependency.`);
+console.log(`Portable build verified: ${manifest.assets.length} media files, relative resources, no platform runtime dependency. The optional 3D field uses external map and weather data.`);

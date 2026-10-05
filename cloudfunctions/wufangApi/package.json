@@ -1,0 +1,8 @@
+{
+  "name": "wufang-api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": { "wx-server-sdk": "4.0.2" }
+}

@@ -1,0 +1,1 @@
+.profile { margin: 44rpx 0 28rpx; padding: 34rpx; display: flex; gap: 24rpx; align-items: center; }.avatar { width: 92rpx; height: 92rpx; border-radius: 50%; background: #e9dfcd; color: #1e4b4a; display: flex; align-items: center; justify-content: center; font-size: 32rpx; }.note { text-align: center; margin-top: 24rpx; font-size: 22rpx; }

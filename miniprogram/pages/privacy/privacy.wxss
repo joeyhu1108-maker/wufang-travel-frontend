@@ -1,0 +1,2 @@
+.policy-version { margin: 24rpx 0; }
+.policy-text { white-space: pre-wrap; font-size: 28rpx; line-height: 1.8; overflow-wrap: anywhere; }

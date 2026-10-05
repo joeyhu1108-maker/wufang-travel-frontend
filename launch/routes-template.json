@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "ali",
+    "title": "阿里大环线",
+    "subtitle": "湖泊、雪山与古格，从拉萨向西",
+    "duration": "10 天 · 抵达日另列",
+    "altitude": "由团队确认海拔与出行准备",
+    "price": null,
+    "cover": "",
+    "description": "",
+    "tags": ["公路旅行"],
+    "published": false,
+    "approved": false
+  },
+  {
+    "_id": "kora",
+    "title": "冈仁波齐转山环线",
+    "subtitle": "穿过旷野，走近冈仁波齐",
+    "duration": "13 天 · 抵达日另列",
+    "altitude": "转山负荷需提前评估",
+    "price": null,
+    "cover": "",
+    "description": "",
+    "tags": ["转山徒步"],
+    "published": false,
+    "approved": false
+  }
+]
